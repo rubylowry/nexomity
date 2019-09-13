@@ -1,8 +1,120 @@
-@import 'variables';
-@import 'mixins';
+@import '_variables';
+@import '_mixins';
 
+
+// This style affects the whole body of my page
 
 body {
   background: $backColor;
-  color: red;
+  color: $fontColor;
+  font-family: $fontFamily;
+}
+
+// Hamburger styling starts here
+
+#menu {
+  width: 35px;
+  height: 30px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+// Hamburger bars 
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: $fontColor;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+// This is the hamburger menu title
+
+.nav-title {
+  color: $fontColor;
+  margin: 60px 0 40px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.nav li a {
+  color: $fontColor;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.nav li {
+  list-style: none;
+  padding: 15px 0;
+}
+
+// This is where I hide the menu pages
+
+.nav {
+  padding: 0;
+  margin: 0 20px;
+  transition: 0.3s ease;
+  display: none;
+}
+
+// This is where the hamburger menu background begins
+
+.menu-bg, #menu-bar {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle,white,$backColor);
+  transition: 0.3s ease;
+}
+
+#menu-bar {
+  z-index: 2;
+}
+
+// This is the hamburger menu backgrounds sizing
+
+.change-bg {
+  width: 375px;
+  height: 810px;
+}
+
+// Hamburger menu styles
+
+.change .bar {
+  background-color: $fontColor;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change {
+  display: block;
 }

@@ -30,6 +30,7 @@ body {
   font-weight: bold; }
 
 .nav li a {
+  font-size: 20px;
   color: #070B34;
   text-decoration: none; }
 
@@ -42,7 +43,7 @@ body {
 
 .nav {
   padding: 0;
-  margin: 0 20px;
+  margin: 0 40px;
   transition: 0.3s ease;
   display: none; }
 

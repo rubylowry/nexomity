@@ -5,5 +5,5 @@ function onClickMenu(){
 
     document.getElementById("nav").classList.toggle("change");
 
-    document.getElementById("menu-bg").classList.toggle("change-bg");
+    document.getElementById("menu__bg").classList.toggle("change__bg");
 }

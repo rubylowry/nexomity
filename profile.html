@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--This is what makes my site responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--This is the font I used throughout entire site-->
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="css/style.css">
+    <title></title>
+
+<!--jquery link-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+<!--This is my hamburger menu-->
+    <div id="menu__bar">
+      <div id="menu" onclick="onClickMenu()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+<!--These are the different pages in my menu-->
+   <ul class="nav" id="nav">
+<!--These are the different pages in my menu-->
+      <div class="nav__title">Menu</div>
+      <li><a href="myhome.html">My Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="#">Alerts</a></li>
+      <li><a href="#">Schedules</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+    </div>
+  <div class="menu__bg" id="menu__bg"></div>
+<!--My navigation menu ENDS here-->
+
+<!--This is where the profile page elements are-->
+<div class="profile" id="profile">
+  <img src="img/profile.jpg" class="profile__img">
+<div class="profile__heading">Kia ora,
+  <div class="profile__subheading">Jane Smith</div>
+  <div class="profile__subheading--small">Everything looks fine.</div>
+</div>
+</div>
+
+
+
+<!--This is a link to my js folder-->
+    <script src="js/script.js"></script>
+  </body>
+</html>

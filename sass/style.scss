@@ -40,7 +40,7 @@ body {
 
 // This is the hamburger menu title
 
-.nav-title {
+.nav__title {
   color: $primaryFontColor;
   margin: 60px 0 40px;
   font-size: 35px;
@@ -73,13 +73,13 @@ body {
 
 // This is where the hamburger menu background begins
 
-.menu-bg, #menu-bar {
+.menu__bg, #menu__bar {
   top: 0;
   left: 0;
   position: absolute;
 }
 
-.menu-bg {
+.menu__bg {
   z-index: 1;
   width: 0;
   height: 0;
@@ -87,13 +87,13 @@ body {
   transition: 0.3s ease;
 }
 
-#menu-bar {
+#menu__bar {
   z-index: 2;
 }
 
 // This is the hamburger menu backgrounds sizing
 
-.change-bg {
+.change__bg {
   width: 414px;
   height: 810px;
 }
@@ -122,22 +122,29 @@ body {
 
 // This is where the heading and subheading styles begin
 
-.profile-img {
-  width: 120px;
-  margin: 70px 220px;
+.profile__img {
+  width: 130px;
+  margin: 65px 200px;
   border-radius: 40%;
 }
 
-.profile-heading {
+.profile__heading {
   margin: 20px 20px;
   font-size: 32px;
   font-weight: bold;
   color: $primaryFontColor;
 }
 
-.profile-subheading {
+.profile__subheading {
   font-size: 55px;
   margin: 30px 0px;
   font-weight: bold;
   color: $secondaryFontColor;
+}
+
+.profile__subheading--small {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 100px 0px;
+  color: $primaryFontColor;
 }

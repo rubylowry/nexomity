@@ -104,4 +104,38 @@ body {
   margin: 100px 0px;
   color: #070B34; }
 
+.home__heading {
+  font-size: 24px;
+  margin: 25px 140px;
+  font-weight: bold; }
+
+.home__container {
+  position: relative;
+  background-color: white;
+  border-radius: 20px; }
+
+.home__img {
+  display: inline-block;
+  width: 80px;
+  margin: 5px 60px; }
+
+.breakpoint__img {
+  display: inline-block;
+  width: 2.2px; }
+
+.home__subheading {
+  font-size: 16px;
+  display: inline-block;
+  max-width: 33%;
+  vertical-align: top;
+  height: 120px; }
+
+.device__heading {
+  position: absolute;
+  top: 0.5em;
+  margin-top: 0em; }
+
+.home__subheading--small {
+  font-size: 14px; }
+
 /*# sourceMappingURL=style.css.map */

@@ -120,7 +120,7 @@ body {
   display: block;
 }
 
-// This is where the heading and subheading styles begin
+// This is where the heading and subheading styles for my profile page begin
 
 .profile__img {
   width: 130px;
@@ -147,4 +147,52 @@ body {
   font-weight: bold;
   margin: 100px 0px;
   color: $primaryFontColor;
+}
+
+// This is where my home page styles start
+
+.home__heading {
+   font-size: 24px;
+   margin: 25px 140px;
+   font-weight: bold;
+}
+
+.home__container {
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.home__img {
+  display: inline-block;
+  width: 80px;
+  margin: 5px 60px;
+}
+
+.breakpoint__img {
+  display: inline-block;
+  width: 2.2px;
+}
+
+.home__subheading {
+  font-size: 16px;
+  // margin:  40px;
+  display: inline-block;
+  max-width: 33%;
+  vertical-align: top;
+  height: 120px;
+}
+
+.device__heading {
+  position: absolute;
+  top: 0.5em;
+  margin-top: 0em;
+}
+
+.device__heading-b  {
+
+}
+
+.home__subheading--small {
+  font-size: 14px;
 }

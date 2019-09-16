@@ -4,6 +4,11 @@
 
 // This style affects the whole body of my page
 
+* {
+   margin: 0;
+	 padding: 0;
+}
+
 body {
   background: $backColor;
   color: $primaryFontColor;
@@ -152,7 +157,7 @@ body {
 // This is where my home page styles start
 
 .home__heading {
-   font-size: 24px;
+   font-size: 26px;
    margin: 25px 140px;
    font-weight: bold;
 }
@@ -161,22 +166,25 @@ body {
   position: relative;
   background-color: white;
   border-radius: 20px;
+  max-width: 380px;
+  max-height: 100px;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
-.home__img {
+.home__png {
   display: inline-block;
-  width: 80px;
-  margin: 5px 60px;
+  width: 70px;
+  margin: 10px 60px;
 }
 
-.breakpoint__img {
+.breakpoint__png {
   display: inline-block;
-  width: 2.2px;
+  width: 1.8px;
+  margin: 8px 2px;
 }
 
 .home__subheading {
-  font-size: 16px;
-  // margin:  40px;
   display: inline-block;
   max-width: 33%;
   vertical-align: top;
@@ -185,14 +193,101 @@ body {
 
 .device__heading {
   position: absolute;
-  top: 0.5em;
+  top: 1.7em;
+  color: $headingColor;
+  font-weight: bold;
   margin-top: 0em;
+  margin-left: 3em;
+  font-size: 16px;
 }
 
-.device__heading-b  {
-
-}
-
-.home__subheading--small {
+.device__subheading {
+  position: absolute;
+  top: 1em;
+  color: $subheadingColor;
+  margin-top: 3.5em;
+  margin-left: 4em;
   font-size: 14px;
+}
+
+// This is my bedroom section
+
+.section {
+  background-color: white;
+  margin-top: 2em;
+  margin-left: 1em;
+  width: 380px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.section__child {
+  position: relative;
+  margin-left: 5em;
+  margin-top: 4em;
+  display: inline-block;
+}
+
+.section__header {
+  position: relative;
+  color: $subheadingColor;
+  margin-left: 10em;
+  margin-top: 2em;
+  font-size: 14px;
+}
+
+.section__title {
+  position: relative;
+  color: $headingColor;
+  margin-left: 6em;
+  margin-top: 1em;
+  font-size: 20px;
+}
+
+// This is my kitchen section
+
+.section__section--secondary {
+  background-color: white;
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-bottom: 2em;
+  width: 380px;
+  height: 360px;
+  border-radius: 20px;
+}
+
+.section__child--secondary img {
+  position: relative;
+  margin-left: 6em;
+  margin-top: 1.5em;
+  display: inline-block;
+}
+
+.section__header--secondary {
+  position: relative;
+  color: $subheadingColor;
+  margin-left: 10em;
+  margin-top: 2em;
+  font-size: 14px;
+}
+
+.section__title--secondary {
+  position: relative;
+  color: $headingColor;
+  margin-left: 6.5em;
+  margin-top: 1em;
+  font-size: 20px;
+}
+
+// This is my footer nav
+
+.footer__nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.footer__img {
+  width: 25px;
+  padding: 25px;
 }

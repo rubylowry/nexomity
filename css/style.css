@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   background: #EDF5F7;
   color: #070B34;
@@ -105,26 +109,30 @@ body {
   color: #070B34; }
 
 .home__heading {
-  font-size: 24px;
+  font-size: 26px;
   margin: 25px 140px;
   font-weight: bold; }
 
 .home__container {
   position: relative;
   background-color: white;
-  border-radius: 20px; }
+  border-radius: 20px;
+  max-width: 380px;
+  max-height: 100px;
+  margin-left: 1em;
+  margin-right: 1em; }
 
-.home__img {
+.home__png {
   display: inline-block;
-  width: 80px;
-  margin: 5px 60px; }
+  width: 70px;
+  margin: 10px 60px; }
 
-.breakpoint__img {
+.breakpoint__png {
   display: inline-block;
-  width: 2.2px; }
+  width: 1.8px;
+  margin: 8px 2px; }
 
 .home__subheading {
-  font-size: 16px;
   display: inline-block;
   max-width: 33%;
   vertical-align: top;
@@ -132,10 +140,85 @@ body {
 
 .device__heading {
   position: absolute;
-  top: 0.5em;
-  margin-top: 0em; }
+  top: 1.7em;
+  color: #3D3D3D;
+  font-weight: bold;
+  margin-top: 0em;
+  margin-left: 3em;
+  font-size: 16px; }
 
-.home__subheading--small {
+.device__subheading {
+  position: absolute;
+  top: 1em;
+  color: #919191;
+  margin-top: 3.5em;
+  margin-left: 4em;
   font-size: 14px; }
+
+.section {
+  background-color: white;
+  margin-top: 2em;
+  margin-left: 1em;
+  width: 380px;
+  height: 350px;
+  border-radius: 20px; }
+
+.section__child {
+  position: relative;
+  margin-left: 5em;
+  margin-top: 4em;
+  display: inline-block; }
+
+.section__header {
+  position: relative;
+  color: #919191;
+  margin-left: 10em;
+  margin-top: 2em;
+  font-size: 14px; }
+
+.section__title {
+  position: relative;
+  color: #3D3D3D;
+  margin-left: 6em;
+  margin-top: 1em;
+  font-size: 20px; }
+
+.section__section--secondary {
+  background-color: white;
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-bottom: 2em;
+  width: 380px;
+  height: 360px;
+  border-radius: 20px; }
+
+.section__child--secondary img {
+  position: relative;
+  margin-left: 6em;
+  margin-top: 1.5em;
+  display: inline-block; }
+
+.section__header--secondary {
+  position: relative;
+  color: #919191;
+  margin-left: 10em;
+  margin-top: 2em;
+  font-size: 14px; }
+
+.section__title--secondary {
+  position: relative;
+  color: #3D3D3D;
+  margin-left: 6.5em;
+  margin-top: 1em;
+  font-size: 20px; }
+
+.footer__nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: center; }
+
+.footer__img {
+  width: 25px;
+  padding: 25px; }
 
 /*# sourceMappingURL=style.css.map */

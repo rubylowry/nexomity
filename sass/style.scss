@@ -423,6 +423,17 @@ body {
   border-radius: 20px;
 }
 
+.lights-wrapper__first-child img {
+  width: 70px;
+  margin-left: 2em;
+}
+
+.lights-wrapper__first-child p {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 1em 3em;
+}
+
 .lights-wrapper__second-child {
   grid-area: section-two;
   background: white;
@@ -439,7 +450,8 @@ body {
 
 .lights-wrapper__fourth-child {
   grid-area: section-four;
-  background: white;
+  font-weight: bold;
+  font-size: 18px;
   padding: 20px 0;
   border-radius: 20px;
 }
@@ -454,6 +466,7 @@ body {
 .lights-wrapper__sixth-child {
   grid-area: section-six;
   background: white;
+  box-shadow: 1px 1px 0.5rem orange;
   padding: 20px 0;
   border-radius: 20px;
 }

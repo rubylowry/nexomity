@@ -362,10 +362,7 @@ body {
 
 // camera
 
-.img {
-  max-width: 100%;
-  min-height: 100%;
-}
+
 
 .kitchen-camera__section {
   background-color: white;
@@ -375,6 +372,11 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 20px;
+
+  .img {
+    max-width: 100%;
+    min-height: 100%;
+  }
 }
 
 .kitchen-camera__img img {
@@ -396,6 +398,7 @@ body {
 
 .lights-wrapper {
   margin-top: 4em;
+  margin-bottom: 4em;
   display: grid;
   grid-template-areas:
   'section-one section-one section-two section-two section-three section-three'
@@ -406,6 +409,11 @@ body {
   'section-fifthteen section-sixteen section-sixteen section-sixteen section-sixteen section-sixteen';
   grid-gap: 10px;
   padding: 5%;
+
+  img {
+    max-width: 100%;
+    min-height: 100%;
+  }
 }
 
 .lights-wrapper__first-child {
@@ -448,6 +456,11 @@ body {
   background: white;
   padding: 20px 0;
   border-radius: 20px;
+}
+
+.lights-wrapper__sixth-child img {
+  width: 200px;
+  margin-left: 5em;
 }
 
 .lights-wrapper__seventh-child {

@@ -228,20 +228,23 @@ body {
   display: inline-block;
 }
 
-.section__header {
+.section__header a {
+  text-decoration: none;
   position: relative;
   color: $subheadingColor;
-  margin-left: 10em;
-  margin-top: 2em;
-  font-size: 14px;
+  margin-top: 3em;
+  margin-left: 8em;
+  font-size: 18px;
 }
 
-.section__title {
+.section__title a {
+  text-decoration: none;
   position: relative;
   color: $headingColor;
-  margin-left: 6em;
-  margin-top: 1em;
-  font-size: 20px;
+  margin-bottom: 0em;
+  margin-left: 5em;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 // This is my kitchen section
@@ -258,25 +261,27 @@ body {
 
 .section__child--secondary img {
   position: relative;
-  margin-left: 6em;
+  margin-left: 5em;
   margin-top: 1.5em;
-  display: inline-block;
+  padding: 20px;
 }
 
-.section__header--secondary {
+.section__header--secondary a {
+  text-decoration: none;
   position: relative;
   color: $subheadingColor;
-  margin-left: 10em;
-  margin-top: 2em;
-  font-size: 14px;
+  margin-left: 8em;
+  font-size: 18px;
 }
 
-.section__title--secondary {
+.section__title--secondary a {
+  text-decoration: none;
   position: relative;
   color: $headingColor;
-  margin-left: 6.5em;
-  margin-top: 1em;
-  font-size: 20px;
+  margin-bottom: 0em;
+  margin-left: 5.4em;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 // Kitchen page styles start here
@@ -304,7 +309,7 @@ body {
   display: inline-block;
 }
 
-// Light display section starts here
+// Kitchen devices starts here
 
 .kitchen-lights__section {
   background-color: white;
@@ -328,6 +333,65 @@ body {
   position: relative;
   margin: 0em 7em;
 }
+
+// ac
+
+.kitchen-ac__section {
+  background-color: white;
+  margin-top: 2em;
+  margin-left: 3.5em;
+  margin-bottom: 2em;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.kitchen-ac__img {
+  display: inline-block;
+  position: relative;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+.kitchen-ac__title {
+  display: inline-block;
+  position: relative;
+  margin-top: 2em;
+  margin-left: 8em;
+}
+
+// camera
+
+.img {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.kitchen-camera__section {
+  background-color: white;
+  margin-top: 2em;
+  margin-left: 3.5em;
+  margin-bottom: 2em;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.kitchen-camera__img img {
+  display: inline-block;
+  position: relative;
+  margin-top: 2em;
+  margin-left: 2em;
+  width: 80%;
+  object-fit: contain;
+}
+
+.kitchen-camera__title {
+  display: inline-block;
+  position: relative;
+  margin: 0em 6em;
+}
+
 
 // This is my footer nav
 

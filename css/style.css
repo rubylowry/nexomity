@@ -301,6 +301,109 @@ body {
   position: relative;
   margin: 0em 6em; }
 
+.lights-wrapper {
+  margin-top: 4em;
+  display: grid;
+  grid-template-areas: 'section-one section-one section-two section-two section-three section-three' 'section-four section-four section-four section-four section-five section-five' 'section-six section-six section-six section-six section-six section-six' 'section-seven section-eight section-nine section-ten section-eleven section-twelve' 'section-thirteen section-thirteen section-thirteen section-fourteen section-fourteen section-fourteen' 'section-fifthteen section-sixteen section-sixteen section-sixteen section-sixteen section-sixteen';
+  grid-gap: 10px;
+  padding: 5%; }
+
+.lights-wrapper__first-child {
+  grid-area: section-one;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__second-child {
+  grid-area: section-two;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__third-child {
+  grid-area: section-three;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__fourth-child {
+  grid-area: section-four;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__fifth-child {
+  grid-area: section-five;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__sixth-child {
+  grid-area: section-six;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__seventh-child {
+  grid-area: section-seven;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__eighth-child {
+  grid-area: section-eight;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__nineth-child {
+  grid-area: section-nine;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__tenth-child {
+  grid-area: section-ten;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__eleventh-child {
+  grid-area: section-eleven;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__twelfth-child {
+  grid-area: section-twelve;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__thirteenth-child {
+  grid-area: section-thirteen;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__fourteenth-child {
+  grid-area: section-fourteen;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__fifthteenth-child {
+  grid-area: section-fifthteen;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
+.lights-wrapper__sixteenth-child {
+  grid-area: section-sixteen;
+  background: white;
+  padding: 20px 0;
+  border-radius: 20px; }
+
 .footer__nav {
   display: flex;
   list-style-type: none;

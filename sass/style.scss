@@ -279,6 +279,56 @@ body {
   font-size: 20px;
 }
 
+// Kitchen page styles start here
+
+// Style the title
+
+.kitchen__container {
+  display: flex;
+}
+
+// Style the arrow icon
+.arrow__icon {
+  margin-top: 2.5em;
+  margin-left: 3em;
+  display: block;
+}
+
+.page__title {
+  color: $primaryFontColor;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 1em;
+  margin-left: 3em;
+  display: inline-block;
+}
+
+// Light display section starts here
+
+.kitchen-lights__section {
+  background-color: white;
+  margin-top: 2em;
+  margin-left: 3.5em;
+  margin-bottom: 2em;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.kitchen-lights__img {
+  display: inline-block;
+  position: relative;
+  margin-left: 4em;
+  margin-top: 1em;
+}
+
+.kitchen-lights__title {
+  display: inline-block;
+  position: relative;
+  margin: 0em 7em;
+}
+
 // This is my footer nav
 
 .footer__nav {

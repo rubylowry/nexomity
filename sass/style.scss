@@ -423,15 +423,16 @@ body {
   border-radius: 20px;
 }
 
-.lights-wrapper__first-child img {
-  width: 70px;
-  margin-left: 2em;
+.first-child__img {
+  margin-left: 1em;
+  width: 80%;
+  object-fit: fill;
 }
 
 .lights-wrapper__first-child p {
   font-size: 12px;
   font-weight: bold;
-  margin: 1em 3em;
+  margin-left: 4em;
 }
 
 .lights-wrapper__second-child {
@@ -441,11 +442,33 @@ body {
   border-radius: 20px;
 }
 
+.lights-wrapper__second-child img {
+  width: 50%;
+  margin-left: 7em;
+}
+
+.lights-wrapper__second-child p {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 3em;
+}
+
 .lights-wrapper__third-child {
   grid-area: section-three;
   background: white;
   padding: 20px 0;
   border-radius: 20px;
+}
+
+.lights-wrapper__third-child img {
+  width: 50%;
+  margin-left: 8em;
+}
+
+.lights-wrapper__third-child p {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 3em;
 }
 
 .lights-wrapper__fourth-child {

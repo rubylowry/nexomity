@@ -319,13 +319,13 @@ body {
 
 .first-child__img {
   margin-left: 1em;
-  width: 80%;
+  width: 50%;
   object-fit: fill; }
 
 .lights-wrapper__first-child p {
   font-size: 12px;
   font-weight: bold;
-  margin-left: 4em; }
+  margin-left: 3em; }
 
 .lights-wrapper__second-child {
   grid-area: section-two;
@@ -333,9 +333,10 @@ body {
   padding: 20px 0;
   border-radius: 20px; }
 
-.lights-wrapper__second-child img {
+.second-child__img {
   width: 50%;
-  margin-left: 7em; }
+  margin-left: 2em;
+  object-fit: fill; }
 
 .lights-wrapper__second-child p {
   font-size: 12px;
@@ -348,9 +349,10 @@ body {
   padding: 20px 0;
   border-radius: 20px; }
 
-.lights-wrapper__third-child img {
+.third-child__img {
+  object-fit: fill;
   width: 50%;
-  margin-left: 8em; }
+  margin-left: 2em; }
 
 .lights-wrapper__third-child p {
   font-size: 12px;
@@ -365,8 +367,9 @@ body {
   border-radius: 20px; }
 
 .lights-wrapper__fifth-child {
+  position: relative;
   grid-area: section-five;
-  background: white;
+  background: none;
   padding: 20px 0;
   border-radius: 20px; }
 
@@ -383,13 +386,12 @@ body {
 
 .lights-wrapper__seventh-child {
   grid-area: section-seven;
-  background: white;
   padding: 20px 0;
-  border-radius: 20px; }
+  border-radius: 20px;
+  font-weight: bold; }
 
 .lights-wrapper__eighth-child {
   grid-area: section-eight;
-  background: white;
   padding: 20px 0;
   border-radius: 20px; }
 
@@ -440,6 +442,52 @@ body {
   background: white;
   padding: 20px 0;
   border-radius: 20px; }
+
+.wrapper__checkbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+input[type="checkbox"] {
+  position: relative;
+  width: 70px;
+  height: 30px;
+  -webkit-appearance: none;
+  background: #c6c6c6;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: .5s; }
+
+input:checked[type="checkbox"] {
+  background: #03a9f4; }
+
+input[type="checkbox"]:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: .5s; }
+
+input:checked[type="checkbox"]:before {
+  left: 40px; }
+
+.circle {
+  width: 100%;
+  border-radius: 50%;
+  background: orange; }
+
+.circle:after {
+  content: '';
+  padding-bottom: 100%;
+  display: block; }
 
 .footer__nav {
   display: flex;

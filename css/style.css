@@ -304,7 +304,7 @@ body {
   margin-top: 2em;
   margin-bottom: 4em;
   display: grid;
-  grid-template-columns: 50px 50px 50px 50px 50px 50px;
+  grid-template-columns: 52px 52px 52px 52px 52px 52px;
   grid-template-areas: 'section-one section-one section-two section-two section-three section-three' 'section-four section-four section-four section-four section-five section-five' 'section-six section-six section-six section-six section-six section-six' 'section-seven section-eight section-nine section-ten section-eleven section-twelve' 'section-thirteen section-thirteen section-thirteen section-fourteen section-fourteen section-fourteen' 'section-fifthteen section-sixteen section-sixteen section-sixteen section-sixteen section-sixteen';
   grid-gap: 10px;
   padding: 5%;
@@ -383,7 +383,8 @@ body {
   position: relative;
   grid-area: section-five;
   padding: 20px 0;
-  border-radius: 20px; }
+  border-radius: 20px;
+  text-align: right; }
 
 .lights-wrapper__sixth-child {
   grid-area: section-six;
@@ -396,12 +397,14 @@ body {
   width: 200px;
   display: inline-block; }
 
-.lights-wrapper__seventh-child p {
-  font-size: 12px;
+.lights-wrapper__seventh-child {
   grid-area: section-seven;
   padding: 20px 0;
-  border-radius: 20px;
-  font-weight: bold; }
+  border-radius: 20px; }
+
+.seventh-child__header {
+  font-weight: bold;
+  font-size: 14px; }
 
 .lights-wrapper__eighth-child {
   grid-area: section-eight;
@@ -432,7 +435,16 @@ body {
   grid-area: section-thirteen;
   background: white;
   padding: 20px 0;
-  border-radius: 20px; }
+  border-radius: 20px;
+  text-align: center; }
+
+.thirteenth-child__text {
+  font-weight: bold;
+  display: inline-block; }
+
+.thirteenth-child__img {
+  width: 20%;
+  display: inline-block; }
 
 .lights-wrapper__fourteenth-child {
   grid-area: section-fourteen;
@@ -440,11 +452,22 @@ body {
   padding: 20px 0;
   border-radius: 20px; }
 
+.fourteenth-child__text {
+  font-weight: bold;
+  display: inline-block; }
+
+.fourteenth-child__img {
+  width: 20%;
+  display: inline-block; }
+
 .lights-wrapper__fifthteenth-child {
   grid-area: section-fifthteen;
-  background: white;
   padding: 20px 0;
   border-radius: 20px; }
+
+.fifthteenth-child__header {
+  font-size: 14px;
+  font-weight: bold; }
 
 .lights-wrapper__sixteenth-child {
   grid-area: section-sixteen;

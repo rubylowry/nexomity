@@ -397,7 +397,7 @@ body {
 // My lights page starts here
 
 .lights-wrapper {
-  margin-top: 4em;
+  margin-top: 2em;
   margin-bottom: 4em;
   display: grid;
   grid-template-areas:
@@ -484,7 +484,6 @@ body {
 .lights-wrapper__fifth-child {
   position: relative;
   grid-area: section-five;
-  background: none;
   padding: 20px 0;
   border-radius: 20px;
 }
@@ -499,7 +498,7 @@ body {
 
 .lights-wrapper__sixth-child img {
   width: 200px;
-  margin-left: 5em;
+  margin-left: 5.5em;
 }
 
 .lights-wrapper__seventh-child {
@@ -517,28 +516,24 @@ body {
 
 .lights-wrapper__nineth-child {
   grid-area: section-nine;
-  background: white;
   padding: 20px 0;
   border-radius: 20px;
 }
 
 .lights-wrapper__tenth-child {
   grid-area: section-ten;
-  background: white;
   padding: 20px 0;
   border-radius: 20px;
 }
 
 .lights-wrapper__eleventh-child {
   grid-area: section-eleven;
-  background: white;
   padding: 20px 0;
   border-radius: 20px;
 }
 
 .lights-wrapper__twelfth-child {
   grid-area: section-twelve;
-  background: white;
   padding: 20px 0;
   border-radius: 20px;
 }
@@ -569,6 +564,10 @@ body {
   background: white;
   padding: 20px 0;
   border-radius: 20px;
+}
+
+.light-panel {
+  max-height: 8.5vh;
 }
 
 // Switch styles
@@ -618,9 +617,8 @@ input:checked[type="checkbox"]:before
 // Circle style
 
 .circle {
-  width: 100%;
+  width: 20px;
   border-radius: 50%;
-  background: orange;
 }
 
 .circle:after {

@@ -301,7 +301,7 @@ body {
   margin: 0em 6em; }
 
 .lights-wrapper {
-  margin-top: 4em;
+  margin-top: 2em;
   margin-bottom: 4em;
   display: grid;
   grid-template-areas: 'section-one section-one section-two section-two section-three section-three' 'section-four section-four section-four section-four section-five section-five' 'section-six section-six section-six section-six section-six section-six' 'section-seven section-eight section-nine section-ten section-eleven section-twelve' 'section-thirteen section-thirteen section-thirteen section-fourteen section-fourteen section-fourteen' 'section-fifthteen section-sixteen section-sixteen section-sixteen section-sixteen section-sixteen';
@@ -369,7 +369,6 @@ body {
 .lights-wrapper__fifth-child {
   position: relative;
   grid-area: section-five;
-  background: none;
   padding: 20px 0;
   border-radius: 20px; }
 
@@ -382,7 +381,7 @@ body {
 
 .lights-wrapper__sixth-child img {
   width: 200px;
-  margin-left: 5em; }
+  margin-left: 5.5em; }
 
 .lights-wrapper__seventh-child {
   grid-area: section-seven;
@@ -397,25 +396,21 @@ body {
 
 .lights-wrapper__nineth-child {
   grid-area: section-nine;
-  background: white;
   padding: 20px 0;
   border-radius: 20px; }
 
 .lights-wrapper__tenth-child {
   grid-area: section-ten;
-  background: white;
   padding: 20px 0;
   border-radius: 20px; }
 
 .lights-wrapper__eleventh-child {
   grid-area: section-eleven;
-  background: white;
   padding: 20px 0;
   border-radius: 20px; }
 
 .lights-wrapper__twelfth-child {
   grid-area: section-twelve;
-  background: white;
   padding: 20px 0;
   border-radius: 20px; }
 
@@ -442,6 +437,9 @@ body {
   background: white;
   padding: 20px 0;
   border-radius: 20px; }
+
+.light-panel {
+  max-height: 8.5vh; }
 
 .wrapper__checkbox {
   position: absolute;
@@ -480,9 +478,8 @@ input:checked[type="checkbox"]:before {
   left: 40px; }
 
 .circle {
-  width: 100%;
-  border-radius: 50%;
-  background: orange; }
+  width: 20px;
+  border-radius: 50%; }
 
 .circle:after {
   content: '';

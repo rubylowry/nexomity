@@ -1,5 +1,7 @@
 @import '_variables';
 @import '_mixins';
+@import '_partials';
+@import '_reset';
 
 
 // This style affects the whole body of my page
@@ -672,7 +674,7 @@ input:checked[type="checkbox"]:before
 
 // Slide container styles
 
-.slide__heading {
+.slider__heading {
   margin-top: 50px;
   opacity: 0.7;
 }
@@ -682,31 +684,12 @@ input:checked[type="checkbox"]:before
   margin-left: 4em;
 }
 
-.slider::after {
-  content: "100";
-  color: white;
-  font-size: 1rem;
-  position: absolute;
-  color: black;
-  left: 80%;
-  top: 130%;
-}
-
-.slider::before {
-  content: "0";
-  color: white;
-  font-size: 1rem;
-  position: absolute;
-  color: black;
-  left: 50%;
-  top: 130%;
-}
-
 .slider {
+  position: relative;
   -webkit-appearance: none;
   width: 100%;
   height: 20px;
-  background: linear-gradient(90deg, rgb(128,255,182) 20%, rgb(214,214,214) 60%);
+  background: linear-gradient(90deg, rgb(214,214,214) 60%, rgb(214,214,214) 60%);
   outline: none;
   opacity: 0.7;
   -webkit-transition: 0.2s;
@@ -717,7 +700,25 @@ input:checked[type="checkbox"]:before
 }
 
 .slider:hover {
-  opacity: 1;
+  opacity: 2;
+}
+
+.slider::before {
+  content: "0";
+  font-size: 1rem;
+  position: absolute;
+  color: black;
+  left: 0%;
+  top: 130%;
+}
+
+.slider::after {
+  content: "100";
+  font-size: 1rem;
+  position: absolute;
+  color: black;
+  left: 90%;
+  top: 130%;
 }
 
 .slider::-webkit-slider-thumb {

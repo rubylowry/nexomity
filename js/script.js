@@ -13,7 +13,7 @@ function onClickMenu(){
 
 // /*This affects the slider*/
 var slider = document.getElementById("myRange");
-/*This affects the value heading*/
+/*This affects the value change*/
 var output = document.getElementById("value");
 
 output.innerHTML = slider.value;
@@ -22,15 +22,8 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 
-slider.addEventListener("mousemove", function(){
+slider.addEventListener ("mousemove", function(){
   var x = slider.value;
-  var color1 = 'linear-gradient(90deg, rgb(117,252,117)' + x + '%, rgb(214,214,214)' + x + '%)';
+  var color = 'linear-gradient(90deg, rgb(117,252,117)' + x + '%, rgb(214,214,214)' + x + '%)';
   slider.style.background = color;
 })
-
-// var ARRAY_INDEX = 0; // You better declare this var outside the event handler function if you want to use it else where
-
-// $("#slider").on("change",function(){
-//     ARRAY_INDEX = $(this).val();
-//     console.log(ARRAY_INDEX);
-// });

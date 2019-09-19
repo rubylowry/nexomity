@@ -158,10 +158,43 @@ body {
 
 // This is where my home page styles start
 
+.home {
+  margin-top: 1.5em;
+  display: inline-flex;
+  flex-direction: row;
+  text-align: center;
+}
+
 .home__heading {
-   font-size: 26px;
-   margin: 25px 140px;
+   font-size: 12px;
    font-weight: bold;
+   display: inline-block;
+   position: relative;
+   margin-left: 12em;
+}
+
+.fa-plus-circle {
+  margin-top: .2em;
+  margin-left: 4.8em;
+  font-size: 20px;
+  color: #CDCDCD;
+  display: inline-block;
+  position: relative;
+}
+
+.my-home {
+  margin-top: 1.5em;
+  display: inline-flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.my-home__heading {
+  font-size: 26px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  margin-left: 6em;
 }
 
 .home__container {
@@ -172,6 +205,7 @@ body {
   max-height: 100px;
   margin-left: 1em;
   margin-right: 1em;
+  margin-top: 3em;
 }
 
 .home__png {
@@ -301,79 +335,76 @@ body {
   display: block;
 }
 
+.fa-arrow-left {
+  color: $primaryFontColor;
+}
+
 .page__title {
   color: $primaryFontColor;
   padding: 14px;
   font-weight: bold;
-  font-size: 16px;
-  margin-top: 1em;
-  margin-left: 3em;
+  font-size: 12px;
+  margin-top: 2em;
+  margin-left: 5.5em;
   display: inline-block;
 }
 
 // Kitchen devices starts here
 
 .kitchen-lights__section {
-  background-color: white;
+  background-color: $secondBackColor;
   margin-top: 2em;
   margin-left: 3.5em;
   margin-bottom: 2em;
   width: 300px;
   height: 300px;
   border-radius: 20px;
+  text-align: center;
 }
 
 .kitchen-lights__img {
   display: inline-block;
   position: relative;
-  margin-left: 4em;
   margin-top: 1em;
 }
 
-.kitchen__lights {
-  display: inline-block;
-  position: relative;
-  margin: 0em 7em;
-  text-decoration: none;
+.kitchen-lights__title a {
+    text-decoration: none;
+    color: $headingColor;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
 }
 
-// ac
+// kitchen ac panel
 
 .kitchen-ac__section {
-  background-color: white;
+  background-color: $secondBackColor;
   margin-top: 2em;
   margin-left: 3.5em;
   margin-bottom: 2em;
   width: 300px;
   height: 300px;
   border-radius: 20px;
+  text-align: center;
 }
 
 .kitchen-ac__img {
   display: inline-block;
   position: relative;
-  margin-left: 2em;
   margin-top: 1em;
 }
 
-.kitchen__ac {
-  display: inline-block;
-  position: relative;
-  margin: 0em 7em;
+.kitchen-ac__title {
   text-decoration: none;
-}
-
-
-// Main kitchen page headings for all three panels
-
-.kitchen__title {
+  color: $headingColor;
+  font-weight: bold;
   display: inline-block;
   position: relative;
-  margin-top: 2em;
-  margin-left: 8em;
+  padding: 40px;
 }
 
-// camera
+// kitchen camera panel
 
 
 
@@ -385,6 +416,7 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 20px;
+  text-align: center;
 
   .img {
     max-width: 100%;
@@ -392,25 +424,25 @@ body {
   }
 }
 
-.kitchen-camera__img img {
+.kitchen-camera__img {
   display: inline-block;
   position: relative;
-  margin-top: 2em;
-  margin-left: 2em;
   width: 80%;
-  object-fit: contain;
 }
 
-.camera__title {
+.kitchen-camera__title {
+  text-decoration: none;
+  color: $headingColor;
+  font-weight: bold;
   display: inline-block;
   position: relative;
-  margin: 0em 6em;
+  padding: 40px;
 }
 
 // My lights page starts here
 
 .lights-wrapper {
-  margin-top: 2em;
+  margin-top: 3em;
   margin-bottom: 4em;
   display: grid;
   grid-template-columns: 52px 52px 52px 52px 52px 52px;
@@ -420,7 +452,7 @@ body {
   'section-six section-six section-six section-six section-six section-six'
   'section-seven section-eight section-nine section-ten section-eleven section-twelve'
   'section-thirteen section-thirteen section-thirteen section-fourteen section-fourteen section-fourteen'
-  'section-fifthteen section-sixteen section-sixteen section-sixteen section-sixteen section-sixteen';
+  'section-fifthteen section-fifthteen section-fifthteen section-fifthteen section-fifthteen section-fifthteen';
   grid-gap: 10px;
   padding: 5%;
   text-align: center;
@@ -573,7 +605,7 @@ body {
 .lights-wrapper__thirteenth-child {
   grid-area: section-thirteen;
   background: white;
-  padding: 20px 0;
+  padding: 10px;
   border-radius: 20px;
   text-align: center;
 }
@@ -584,15 +616,17 @@ body {
 }
 
 .thirteenth-child__img {
-  width: 20%;
+  width: 10%;
+  padding: 10px;
   display: inline-block;
 }
 
 .lights-wrapper__fourteenth-child {
   grid-area: section-fourteen;
   background: white;
-  padding: 20px 0;
+  padding: 10px;
   border-radius: 20px;
+  text-align: center;
 }
 
 .fourteenth-child__text {
@@ -601,7 +635,8 @@ body {
 }
 
 .fourteenth-child__img {
-  width: 20%;
+  width: 10%;
+  padding: 10px;
   display: inline-block;
 }
 
@@ -609,17 +644,7 @@ body {
   grid-area: section-fifthteen;
   padding: 20px 0;
   border-radius: 20px;
-}
-
-.fifthteenth-child__header {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.lights-wrapper__sixteenth-child {
-  grid-area: section-sixteen;
-  padding: 20px 0;
-  border-radius: 20px;
+  text-align: center;
 }
 
 .light-panel {
@@ -627,21 +652,25 @@ body {
   max-width: 100%;
 }
 
+.highlighted-panel {
+  box-shadow: 1px 1px 0.7rem $secondaryFontColor;
+}
+
 // Switch styles
 
 .wrapper__checkbox {
   position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%,-50%);
 }
 input[type="checkbox"]
 {
   position: relative;
-  width: 70px;
-  height: 30px;
+  margin-left: 15em;
+  margin-top: 2em;
+  width: 50px;
+  height: 20px;
   -webkit-appearance: none;
-  background: #c6c6c6;
+  background: #CDCDCD;
   outline: none;
   border-radius: 20px;
   box-shadow: inset 0 0 5px rgba(0,0,0,.2);
@@ -654,10 +683,12 @@ input:checked[type="checkbox"]
 }
 input[type="checkbox"]:before
 {
+
+/*this is the circle inside*/
   content: '';
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 20px;
   top: 0;
   left: 0;
@@ -668,20 +699,21 @@ input[type="checkbox"]:before
 }
 input:checked[type="checkbox"]:before
 {
-  left: 40px;
+  left: 30px;
 }
 
 
 // Slide container styles
 
-.slider__heading {
-  margin-top: 50px;
-  opacity: 0.7;
+.slideContainer {
+  margin-top: .5em;
+  width: 100%;
 }
 
-.slideContainer {
-  width: 75%;
-  margin-left: 4em;
+.slider__heading {
+  opacity: 0.7;
+  font-weight: bold;
+  color: white;
 }
 
 .slider {
@@ -707,7 +739,7 @@ input:checked[type="checkbox"]:before
   content: "0";
   font-size: 1rem;
   position: absolute;
-  color: black;
+  color: $primaryFontColor;
   left: 0%;
   top: 130%;
 }
@@ -716,7 +748,7 @@ input:checked[type="checkbox"]:before
   content: "100";
   font-size: 1rem;
   position: absolute;
-  color: black;
+  color: $primaryFontColor;
   left: 90%;
   top: 130%;
 }
@@ -729,6 +761,42 @@ input:checked[type="checkbox"]:before
   background: white;
   border-radius: 50%;
   cursor: pointer;
+}
+
+// Camera page styles start here
+
+/*Slider*/
+
+.camera__container {
+  width: 60%;
+  margin: 100px auto;
+}
+
+.camera__slider {
+  position: relative;
+}
+
+.camera__slider .camera__track {
+  width: 100%;
+  height: 6px;
+  background: #ccc;
+}
+
+.camera__slider .camera__track .camera__progress {
+  width: 100%;
+  width: 100%;
+  background: tomato;
+  transform-origin: 0;
+}
+
+.camera__slider .camera__thumb {
+  width: 20px;
+  height: 20px;
+  background: tomato;
+  position: absolute;
+  top: -7px;
+  border-radius: 50px;
+  transform: translate(-50%);
 }
 
 // Circle style

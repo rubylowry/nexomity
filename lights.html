@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script src="https://kit.fontawesome.com/9f5dfb9484.js"></script>
     <!--This is what makes my site responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -44,7 +45,12 @@
 <!--This is where the content for 'my lights' page starts-->
 
 <div class="home">
-    <div class="home__heading">My Lights</div>
+    <div class="home__heading">
+       <h1>My Lights</h1>
+    </div>
+    <div class"plus__icon">
+    <i class="fas fa-plus-circle"></i>
+    </div>
 </div>
 
 <div class="lights-wrapper">
@@ -60,7 +66,7 @@
       </div>
           <p>Bedroom Light</p>
     </div>
-    <div class="lights-wrapper__third-child light-panel">
+    <div class="lights-wrapper__third-child highlighted-panel">
         <div class="third-child__img">
           <img src="img/kitchenbulb.png">
         </div>
@@ -113,12 +119,12 @@
       <div class="fourteenth-child__text">2 w/hour</div>
     </div>
     <div class="lights-wrapper__fifthteenth-child">
-        <div class="fifthteenth-child__header">Intensity</div>
-    </div>
-    <div class="lights-wrapper__sixteenth-child">
          <div class="slideContainer">
                <input type="range" min="0" max="100" value="0" id="myRange" class="slider">
-               <div class"slider__heading">Value: <span id="value"></span></div>
+               <div class"slider__heading">
+                 <div>Brightness: </div>
+                 <span id="value"></span>
+               </div>
          </div>
     </div>
 </div>

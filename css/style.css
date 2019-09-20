@@ -304,7 +304,7 @@ body {
   position: relative;
   margin-top: 1em; }
 
-.kitchen-ac__title {
+.kitchen-ac__title a {
   text-decoration: none;
   color: #3D3D3D;
   font-weight: bold;
@@ -577,28 +577,12 @@ input:checked[type="checkbox"]:before {
 .slider:hover {
   opacity: 2; }
 
-.slider::before {
-  content: "0";
-  font-size: 1rem;
-  position: absolute;
-  color: #070B34;
-  left: 0%;
-  top: 130%; }
-
-.slider::after {
-  content: "100";
-  font-size: 1rem;
-  position: absolute;
-  color: #070B34;
-  left: 90%;
-  top: 130%; }
-
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 40px;
   height: 40px;
-  background: white;
+  background: #FFE000;
   border-radius: 50%;
   cursor: pointer; }
 
@@ -666,19 +650,29 @@ input:checked[type="checkbox"]:before {
   justify-content: space-around; }
 
 .ac__item {
-  background: tomato;
+  background: white;
   padding: 5px;
   width: 100px;
   height: 100px;
   margin-top: 7em;
   line-height: 20px;
-  color: white;
+  color: #070B34;
   font-weight: bold;
-  font-size: .5em;
+  font-size: .7em;
   text-align: center;
-  border-radius: .5em; }
-  .ac__item img {
+  border-radius: 1em; }
+  .ac__item .kit__img {
+    width: 50px; }
+  .ac__item .bed__img {
     width: 70px; }
+  .ac__item .liv__img {
+    width: 50px; }
+
+.bedroom__text {
+  margin-top: 1em; }
+
+.shadow {
+  box-shadow: 1px 1px 0.5rem #54B6EB; }
 
 .footer__nav {
   display: flex;

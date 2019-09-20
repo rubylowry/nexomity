@@ -395,7 +395,7 @@ body {
   margin-top: 1em;
 }
 
-.kitchen-ac__title {
+.kitchen-ac__title a {
   text-decoration: none;
   color: $headingColor;
   font-weight: bold;
@@ -735,30 +735,30 @@ input:checked[type="checkbox"]:before
   opacity: 2;
 }
 
-.slider::before {
-  content: "0";
-  font-size: 1rem;
-  position: absolute;
-  color: $primaryFontColor;
-  left: 0%;
-  top: 130%;
-}
-
-.slider::after {
-  content: "100";
-  font-size: 1rem;
-  position: absolute;
-  color: $primaryFontColor;
-  left: 90%;
-  top: 130%;
-}
+// .slider::before {
+//   content: "0";
+//   font-size: 1rem;
+//   position: absolute;
+//   color: $primaryFontColor;
+//   left: 0%;
+//   top: 130%;
+// }
+//
+// .slider::after {
+//   content: "100";
+//   font-size: 1rem;
+//   position: absolute;
+//   color: $primaryFontColor;
+//   left: 90%;
+//   top: 130%;
+// }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 40px;
   height: 40px;
-  background: white;
+  background: #FFE000;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -847,23 +847,35 @@ input:checked[type="checkbox"]:before
 }
 
 .ac__item {
-  background: tomato;
+  background: white;
   padding: 5px;
   width: 100px;
   height: 100px;
   margin-top: 7em;
   line-height: 20px;
-  color: white;
+  color: $primaryFontColor;
   font-weight: bold;
-  font-size: .5em;
+  font-size: .7em;
   text-align: center;
-  border-radius: .5em;
-  img {
+  border-radius: 1em;
+  .kit__img {
+    width: 50px;
+  }
+  .bed__img {
     width: 70px;
+  }
+  .liv__img {
+    width: 50px;
   }
 }
 
+.bedroom__text {
+  margin-top: 1em;
+}
 
+.shadow {
+  box-shadow: 1px 1px 0.5rem $secondaryFontColor;
+}
 
 // This is my footer nav
 

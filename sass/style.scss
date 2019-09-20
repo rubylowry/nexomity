@@ -813,6 +813,62 @@ input:checked[type="checkbox"]:before
   display: block;
 }
 
+// AC page starts here
+
+.my-ac {
+  margin-top: 1.5em;
+  display: inline-flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.my-ac__heading {
+  font-size: 26px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  margin-left: 5em;
+}
+
+/*AC Controller three panels*/
+
+.AcContainer {
+  width: 100%;
+  margin-top: 3em;
+  background-color: white;
+}
+
+.AcContainer_panelContainer {
+  background-color: pink;
+  margin: 20px;
+  padding: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+
+     .AcContainer__panel {
+      font-size: 12px;
+      background-color: white;
+      border:1px solid black;
+      display: flex;
+  }
+}
+
+.AcContainer__livingroomImage {
+  justify-content: center;
+  width: 40%;
+}
+
+.AcContainer__bedroomImage {
+  width: 80%;
+}
+
+.AcContainer__kitchenImage {
+  width: 70%;
+}
+
+
+
 // This is my footer nav
 
 .footer__nav {

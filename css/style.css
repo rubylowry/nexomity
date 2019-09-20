@@ -654,33 +654,31 @@ input:checked[type="checkbox"]:before {
   margin-left: 5em; }
 
 /*AC Controller three panels*/
-.AcContainer {
-  width: 100%;
-  margin-top: 3em;
-  background-color: white; }
-
-.AcContainer_panelContainer {
-  background-color: pink;
-  margin: 20px;
-  padding: 20px;
-  font-size: 30px;
+.block__ac {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  justify-content: center; }
-  .AcContainer_panelContainer .AcContainer__panel {
-    font-size: 12px;
-    background-color: white;
-    border: 1px solid black;
-    display: flex; }
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around; }
 
-.AcContainer__livingroomImage {
-  justify-content: center;
-  width: 40%; }
-
-.AcContainer__bedroomImage {
-  width: 80%; }
-
-.AcContainer__kitchenImage {
-  width: 70%; }
+.ac__item {
+  background: tomato;
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  margin-top: 7em;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: .5em;
+  text-align: center;
+  border-radius: .5em; }
+  .ac__item img {
+    width: 70px; }
 
 .footer__nav {
   display: flex;

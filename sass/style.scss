@@ -832,39 +832,35 @@ input:checked[type="checkbox"]:before
 
 /*AC Controller three panels*/
 
-.AcContainer {
-  width: 100%;
-  margin-top: 3em;
-  background-color: white;
-}
+.block__ac {
+  padding: 0;
+  margin: 0;
 
-.AcContainer_panelContainer {
-  background-color: pink;
-  margin: 20px;
-  padding: 20px;
-  font-size: 30px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  justify-content: center;
 
-     .AcContainer__panel {
-      font-size: 12px;
-      background-color: white;
-      border:1px solid black;
-      display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.ac__item {
+  background: tomato;
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  margin-top: 7em;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: .5em;
+  text-align: center;
+  border-radius: .5em;
+  img {
+    width: 70px;
   }
-}
-
-.AcContainer__livingroomImage {
-  justify-content: center;
-  width: 40%;
-}
-
-.AcContainer__bedroomImage {
-  width: 80%;
-}
-
-.AcContainer__kitchenImage {
-  width: 70%;
 }
 
 

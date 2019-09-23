@@ -16,6 +16,6 @@ slider.oninput = function() {
 
 slider.addEventListener ("mousemove", function(){
   var x = slider.value;
-  var color = 'linear-gradient(90deg, rgb(255,251,0)' + x + '%, rgb(214,214,214)' + x + '%)';
+  var color = 'linear-gradient(90deg, rgb(255,251,0)' + x + '%, rgb(255,255,255)' + x + '%)';
   slider.style.background = color;
 })
